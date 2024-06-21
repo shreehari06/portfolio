@@ -4,11 +4,13 @@ import { Body, BodyMedium, BodySmall, Heading, SubHeading } from './styles'
 export interface TypographyProps {
     type: 'heading' | 'body' | 'subheading' | 'bodyMedium' | 'bodySmall'
     children: ReactNode
+    id?: string
 }
 
 const componentMap: {
     [K in TypographyProps['type']]?: React.ComponentType<{
         children?: React.ReactNode
+        id?: string
     }>
 } = {
     heading: Heading,
@@ -18,14 +20,14 @@ const componentMap: {
     bodySmall: BodySmall,
 }
 
-const Typography = ({ type, children }: TypographyProps) => {
+const Typography = ({ type, children, id }: TypographyProps) => {
     const Component = componentMap[type]
 
     if (!Component) {
         return <>{children}</>
     }
 
-    return <Component>{children}</Component>
+    return <Component id={id}>{children}</Component>
 }
 
 export default Typography

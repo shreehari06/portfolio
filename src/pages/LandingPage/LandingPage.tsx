@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../../ui-components/Section/Section'
-import { HeroContainer } from './styles'
+import { HeroContainer, ProjectsContainer } from './styles'
 import { BoldText, Typography } from '../../ui-components'
 
 const LandingPage = () => {
@@ -19,12 +19,17 @@ const LandingPage = () => {
                     <BoldText> McKinsey&Company.</BoldText>
                 </Typography>
             </HeroContainer>
-            <Section
-                title="title"
-                content=""
-                body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ratione veritatis accusantium. Reiciendis dolor quae vitae reprehenderit, architecto odio incidunt.
-"
-            />
+
+            <ProjectsContainer>
+                <Typography type="heading" id="projects-heading">
+                    projects
+                </Typography>
+                <Section
+                    title="CSS Showcase"
+                    content=""
+                    body="Collection of three landing pages implemented without any javascript, showcasing my CSS prowess."
+                />
+            </ProjectsContainer>
         </>
     )
 }

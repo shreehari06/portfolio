@@ -1,13 +1,16 @@
 import styled from 'styled-components'
 
-export const HeroContainer = styled.div`
+const BaseContainer = styled.div`
+    width: 60vw;
+    height: 100dvh;
+    margin-inline: auto;
+`
+
+export const HeroContainer = styled(BaseContainer)`
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 100ch;
-    margin-inline: auto;
-    height: 100dvh;
     transform: translateY(-5%);
 
     & > h1[class^='Heading-'] {
@@ -15,3 +18,10 @@ export const HeroContainer = styled.div`
         margin-bottom: 2rem;
     }
 `
+export const SectionContainer = styled(BaseContainer)`
+    & > h1[class^='Heading-'] {
+        padding-top: 6rem;
+        padding-bottom: 2.25rem;
+    }
+`
+export const ProjectsContainer = styled(SectionContainer)``

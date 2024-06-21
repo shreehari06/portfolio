@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-    border: 1px solid black;
-`
+export const Container = styled.div``
 
 export const TitleContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 0.5rem;
 `
 
 export const Block = styled.div`
