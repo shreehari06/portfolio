@@ -1,7 +1,12 @@
 import React from 'react'
-import Section from '../../ui-components/Section/Section'
 import { HeroContainer, ProjectsContainer } from './styles'
-import { BoldText, Typography } from '../../ui-components'
+import {
+    BoldText,
+    Typography,
+    Section,
+    DynamicCard,
+    CardContainer,
+} from '../../ui-components'
 
 const LandingPage = () => {
     return (
@@ -26,9 +31,14 @@ const LandingPage = () => {
                 </Typography>
                 <Section
                     title="CSS Showcase"
-                    content=""
-                    body="Collection of three landing pages implemented without any javascript, showcasing my CSS prowess."
-                />
+                    bodyText="Collection of three landing pages implemented without any javascript, showcasing my CSS prowess."
+                >
+                    <CardContainer>
+                        <DynamicCard />
+                        <DynamicCard />
+                        <DynamicCard />
+                    </CardContainer>
+                </Section>
             </ProjectsContainer>
         </>
     )

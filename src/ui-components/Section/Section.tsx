@@ -4,21 +4,21 @@ import { Typography } from '../Typography'
 
 export interface SectionProps {
     title: string
-    content: React.ReactNode
-    body?: React.ReactNode
+    children?: React.ReactNode
+    bodyText?: React.ReactNode
 }
 
-const Section = ({ title, content, body }: SectionProps) => {
+const Section = ({ title, children, bodyText }: SectionProps) => {
     return (
         <Container>
             <TitleContainer>
                 <Block />
                 <Typography type="body">{title}</Typography>
             </TitleContainer>
-            <ContentContainer>{content}</ContentContainer>
-            {body && (
+            {children && <ContentContainer>{children}</ContentContainer>}
+            {bodyText && (
                 <ContentContainer>
-                    <Typography type="body">{body}</Typography>
+                    <Typography type="body">{bodyText}</Typography>
                 </ContentContainer>
             )}
         </Container>

@@ -15,6 +15,8 @@ export const Block = styled.div`
     background: #7278ff;
 `
 
-export const ContentContainer = styled.div``
+export const ContentContainer = styled.div`
+    display: flex;
+`
 
 export const BodyContainer = styled.div``
