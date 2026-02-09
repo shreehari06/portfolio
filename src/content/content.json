@@ -1,0 +1,484 @@
+{
+  "site": {
+    "name": "Shreehari Thakral",
+    "title": "UI-First Full-Stack Product Engineer",
+    "location": "Bengaluru, India",
+    "shortIntro": "UI-first product engineer building full-stack systems and GenAI-assisted workflows that stay reliable in production."
+  },
+  "hero": {
+    "label": "UI-First Full-Stack Product Engineer",
+    "headlinePart1": "I craft UI that feels effortless",
+    "headlineAccent": "at scale",
+    "subheadline": "Frontend SME with ~4 years of full-stack ownership. I build data-heavy product workflows, production-grade observability, and GenAI-assisted features designed for trust (clarity, guardrails, and human-in-the-loop control).",
+    "primaryCta": {
+      "text": "Explore",
+      "href": "#capabilities",
+      "cursorLabel": "Explore"
+    },
+    "secondaryCta": {
+      "text": "Get in Touch",
+      "href": "#contact",
+      "cursorLabel": "Connect"
+    },
+    "scrollIndicator": "Scroll"
+  },
+  "cinematicTransition": {
+    "line1": "Scale is the job.",
+    "line2": "Simplicity is the craft."
+  },
+  "philosophy": {
+    "label": "Philosophy",
+    "headlinePart1": "How I think about",
+    "headlineAccent": "building software",
+    "principles": [
+      {
+        "number": "01",
+        "title": "UI Clarity",
+        "description": "I care about interfaces that feel effortless—clean hierarchy, predictable interactions, and patterns that reduce cognitive load."
+      },
+      {
+        "number": "02",
+        "title": "Own the Whole System",
+        "description": "From architecture to deployment, I like shipping end-to-end features with fast feedback loops and strong collaboration."
+      },
+      {
+        "number": "03",
+        "title": "Trust at Scale",
+        "description": "Reliability, observability, and guardrails matter—especially when adding GenAI to real workflows. Great products stay great in production."
+      }
+    ],
+    "quote": {
+      "text": "Make it work, make it right, make it fast.",
+      "author": "Kent Beck"
+    }
+  },
+  "capabilities": {
+    "label": "Capabilities",
+    "headlinePart1": "What I bring to the",
+    "headlineAccent": "table",
+    "groups": [
+      {
+        "category": "Frontend (UI Craft)",
+        "description": "Scalable, high-quality interfaces with strong UX instincts and attention to detail.",
+        "skills": [
+          "React",
+          "TypeScript",
+          "Angular",
+          "HTML",
+          "CSS",
+          "Framer Motion",
+          "AG Grid",
+          "Figma"
+        ]
+      },
+      {
+        "category": "Backend (Full-Stack Delivery)",
+        "description": "APIs and services with pragmatic architecture and reliable delivery.",
+        "skills": [
+          "Node.js (Fastify)",
+          "GraphQL",
+          ".NET",
+          "PostgreSQL",
+          "Redis",
+          "WebSockets",
+          "protobuf"
+        ]
+      },
+      {
+        "category": "GenAI Product Engineering",
+        "description": "Designing GenAI-assisted workflows with strong UX, guardrails, and human-in-the-loop control.",
+        "skills": [
+          "LLM API integration",
+          "Multimodal extraction (text + images)",
+          "Insights / validation agents",
+          "Prompting & structured outputs",
+          "UX for trust (controls, explanations, feedback)"
+        ]
+      },
+      {
+        "category": "Reliability & Observability",
+        "description": "Visibility into systems and dependable releases through instrumentation and automation.",
+        "skills": [
+          "OpenTelemetry (OTEL)",
+          "Dynatrace",
+          "CI/CD",
+          "GitLab",
+          "Testing",
+          "Linting",
+          "Locust"
+        ]
+      },
+      {
+        "category": "Product & Collaboration",
+        "description": "Working closely with stakeholders, mentoring engineers, and making teams move faster.",
+        "skills": [
+          "Stakeholder Collaboration",
+          "Frontend SME",
+          "Mentorship",
+          "L3 Support",
+          "Jira",
+          "Confluence",
+          "Miro"
+        ]
+      }
+    ],
+    "closingStatement": {
+      "prefix": "I focus on",
+      "highlight": "UI craft + full-stack ownership",
+      "suffix": "— and I'm now applying the same product mindset to GenAI features: making them useful, trustworthy, and fast to ship."
+    }
+  },
+  "selectedWork": {
+    "label": "Selected Work",
+    "headlinePart1": "Internal work on",
+    "headlineAccent": "Promotion Advisor",
+    "description": "Most of my work is internal and lives inside enterprise environments. Below is a curated, non-confidential view of what I've owned and shipped across Promotion Advisor—focused on product experience, reliability, observability, data-heavy UI, and GenAI exploration.",
+    "productContext": {
+      "suite": "Promotion Performance (Periscope® by McKinsey)",
+      "product": "Promotion Advisor",
+      "publicInfoUrl": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/solutions/periscope/solutions/b2c-pricing-solutions/promotion-performance",
+      "publicLinkLabel": "Promotion Performance (Periscope® by McKinsey)",
+      "publicContextLabel": "Public product context",
+      "publicContextTooltip": "Opens public overview",
+      "publicContextDisclaimer": "Work details here are intentionally sanitized; link is for public product context only.",
+      "publicSummary": "Publicly described as a solution that helps companies design and implement promotional activities to maximize margin, sales, and long-term impact; supports better allocation of promotional investment and transparency into event performance, supported by data collection/cleaning/validation and insights."
+    },
+    "projects": [
+      {
+        "title": "Promotion Advisor — GenAI Features (Insights + Validation Agents)",
+        "description": "Currently integrating GenAI capabilities inside Promotion Advisor (internal): insights-style assistance and validation agents designed to improve workflow quality, speed, and user trust.",
+        "tags": ["Internal", "GenAI", "Agents", "Product UX", "Workflow Quality"],
+        "status": "internal",
+        "statusLabel": "Internal",
+        "caseStudy": {
+          "context": "Internal GenAI exploration and delivery. Described at a high level without confidential implementation details.",
+          "whatIOwned": [
+            "Exploration → prototyping → delivery of GenAI-assisted UX",
+            "Human-in-the-loop patterns and guardrails",
+            "Quality and validation mindset for enterprise workflows"
+          ],
+          "technicalHighlights": [
+            "Insights agent patterns (summaries, suggestions, explanations)",
+            "Validation agent patterns (checks, warnings, input consistency)",
+            "UX design for trust: clarity, controllability, and feedback loops"
+          ]
+        }
+      },
+      {
+        "title": "Promotion Advisor — Frontend Platform & Product Experience",
+        "description": "Frontend SME work delivering scalable React + TypeScript interfaces and shaping UX patterns for complex, data-heavy workflows (internal).",
+        "tags": ["Internal", "React", "TypeScript", "UI Architecture", "UX Patterns"],
+        "status": "internal",
+        "statusLabel": "Internal",
+        "caseStudy": {
+          "context": "Internal product work on Promotion Advisor. Details are intentionally sanitized.",
+          "whatIOwned": [
+            "Frontend architecture and scalable UI patterns",
+            "Cross-functional collaboration with stakeholders",
+            "Quality bar for UI/UX consistency and performance"
+          ],
+          "technicalHighlights": [
+            "Component-driven architecture, clean state flows, strong typing",
+            "Micro-interactions and responsive layouts for dense data screens",
+            "Performance-minded UI decisions for real-world usage"
+          ]
+        }
+      },
+      {
+        "title": "Promotion Advisor — Real-Time Workflows",
+        "description": "Implemented real-time experiences and workflow responsiveness with WebSockets (internal), with a focus on reliability and operational readiness.",
+        "tags": ["Internal", "WebSockets", "Reliability", "Operations"],
+        "status": "internal",
+        "statusLabel": "Internal",
+        "caseStudy": {
+          "context": "Internal workflows requiring responsive updates and production-grade behavior.",
+          "whatIOwned": [
+            "Real-time UX patterns and integration points",
+            "Operational support mindset (stability, quick debugging)"
+          ],
+          "technicalHighlights": [
+            "Event-driven UI updates and predictable state transitions",
+            "Edge-case handling for reconnects / stale states",
+            "Pragmatic monitoring hooks to reduce incident time"
+          ]
+        }
+      },
+      {
+        "title": "Promotion Advisor — Observability & Dashboards",
+        "description": "Improved production visibility with OpenTelemetry + Dynatrace instrumentation and custom dashboards (internal).",
+        "tags": ["Internal", "OpenTelemetry", "Dynatrace", "Dashboards"],
+        "status": "internal",
+        "statusLabel": "Internal",
+        "caseStudy": {
+          "context": "Internal observability improvements to reduce time-to-diagnosis and increase confidence in releases.",
+          "whatIOwned": [
+            "Instrumentation strategy and integration",
+            "Dashboard design for fast operational insights"
+          ],
+          "technicalHighlights": [
+            "OTEL SDK integration patterns",
+            "Actionable dashboards aligned to real workflows",
+            "Better visibility into reliability + performance signals"
+          ]
+        }
+      },
+      {
+        "title": "Promotion Advisor — Reporting & Data Visualization",
+        "description": "Enhanced reporting UX with Power BI + AG Grid integrations to support decision workflows (internal).",
+        "tags": ["Internal", "Power BI", "AG Grid", "Data Visualization"],
+        "status": "internal",
+        "statusLabel": "Internal",
+        "caseStudy": {
+          "context": "Internal reporting surfaces where clarity and usability matter as much as correctness.",
+          "whatIOwned": [
+            "Data-heavy UI composition and interaction design",
+            "Pragmatic integration patterns for embedded reporting"
+          ],
+          "technicalHighlights": [
+            "Grid-based UX for large datasets",
+            "Interaction patterns that keep complexity readable",
+            "Performance-aware rendering and layout"
+          ]
+        }
+      }
+    ],
+    "drawerLabels": {
+      "internalProject": "Internal Project",
+      "context": "Context",
+      "whatIOwned": "What I Owned",
+      "technicalHighlights": "Technical Highlights",
+      "technologies": "Technologies"
+    },
+    "collaborationCta": {
+      "prefix": "Want to chat about frontend craft, reliability, or GenAI product UX?",
+      "linkText": "Reach out",
+      "href": "#contact"
+    }
+  },
+  "hackathonSpotlight": {
+    "label": "Hackathon Spotlight",
+    "headlinePart1": "Cleansheet cost estimation, powered by",
+    "headlineAccent": "multimodal AI",
+    "description": "A full-stack tool built for maintenance contractors and operations teams to convert messy work orders + site photos into a structured cleansheet—then compare invoice totals vs. should-cost estimates to flag billing discrepancies.",
+    "project": {
+      "title": "Cleansheet Cost Estimation Tool",
+      "status": "hackathon",
+      "statusLabel": "Hackathon",
+      "description": "AI-powered cleansheet generator that turns job text + photos into structured task breakdowns, editable cost tables, and variance analytics for invoice review.",
+      "techStack": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "FastAPI (Python)",
+        "SQLite",
+        "OpenAI API (multimodal / vision-capable)"
+      ],
+      "oneLiner": "Built an AI-powered cost estimation tool projected to identify $30M+ in annual contractor billing discrepancies across enterprise maintenance portfolios (illustrative scenario).",
+      "overview": "Designed to help teams quickly understand what work should cost, spot variance vs. invoices, and turn reactive auditing into repeatable cost intelligence.",
+      "keyFeatures": [
+        "AI-powered data extraction: parses job descriptions + photos into itemized task breakdowns with time/cost estimates",
+        "Interactive cleansheet table: real-time editable rows, drag-and-drop reordering, automatic totals (labor + materials + overall)",
+        "Multi-source rate handling: supports invoice-derived rates or contractor default rates with conditional validation",
+        "Variance analytics dashboard: compares should-cost vs invoice totals with percentage variance indicators and alerts",
+        "Waterfall visualizations: hours/cost breakdown across prep, core tasks, and non-labor items (materials/equipment/permits)",
+        "Contractor management: CRUD for contractor profiles and default hourly rates"
+      ],
+      "impactPotential": {
+        "disclaimer": "Impact numbers below are illustrative scenario math (not measured production outcomes). Actual results depend on adoption, data quality, invoice mix, and audit processes.",
+        "valueProposition": [
+          "Reduces invoice audit time from hours to minutes, enabling review of more invoices with the same resources (target outcome)",
+          "Helps identify overcharges/inefficiencies via structured breakdown + variance signals (target outcome)"
+        ],
+        "scenarios": [
+          {
+            "scenario": "Mid-size enterprise",
+            "annualSpendUSD": 50000000,
+            "inefficiencyRate": "12%",
+            "potentialSavingsUSD": 6000000
+          },
+          {
+            "scenario": "Large enterprise",
+            "annualSpendUSD": 200000000,
+            "inefficiencyRate": "10%",
+            "potentialSavingsUSD": 20000000
+          },
+          {
+            "scenario": "Portfolio (5 clients)",
+            "annualSpendUSD": 500000000,
+            "inefficiencyRate": "8%",
+            "potentialSavingsUSD": 40000000
+          }
+        ]
+      },
+      "audienceCopy": {
+        "technicalRecruiter": "Built a full-stack multimodal AI app (React/TS + FastAPI) that extracts structured tasks from text + photos, powers an editable cleansheet UI, and computes variance analytics and visualizations.",
+        "businessStakeholder": "A cost-intelligence tool that turns unstructured work orders into standardized cleansheets and flags invoice vs should-cost variance—helping scale audit coverage and strengthen contractor negotiations."
+      }
+    },
+    "cta": {
+      "prefix": "Want the story behind it?",
+      "linkText": "Let's connect",
+      "href": "#contact"
+    }
+  },
+  "experience": {
+    "label": "Experience",
+    "headlinePart1": "Building impact at",
+    "headlineAccent": "scale",
+    "metrics": [
+      {
+        "metric": "~4",
+        "label": "Years Experience",
+        "description": "Frontend-focused full-stack development"
+      },
+      {
+        "metric": "3",
+        "label": "Internships",
+        "description": "Angular, Streamlit, and full-stack web apps"
+      },
+      {
+        "metric": "E2E",
+        "label": "Ownership",
+        "description": "From architecture to deployment and operations"
+      },
+      {
+        "metric": "SME",
+        "label": "Frontend SME",
+        "description": "Driving UI quality and scalability"
+      }
+    ],
+    "timeline": [
+      {
+        "period": "Aug 2022 — Present",
+        "role": "Software Engineer 2",
+        "company": "McKinsey & Company",
+        "impact": "Built product architecture and features end-to-end; delivered scalable UI as Frontend SME; implemented real-time workflows; strengthened CI/CD, observability, and operational reliability; mentored junior engineers.",
+        "location": "Bangalore, India",
+        "techStack": [
+          "React",
+          "TypeScript",
+          "Fastify",
+          ".NET",
+          "PostgreSQL",
+          "GraphQL",
+          "Redis",
+          "OpenTelemetry",
+          "Dynatrace",
+          "GitLab",
+          "Power BI",
+          "AG Grid"
+        ]
+      },
+      {
+        "period": "Feb 2022 — Jun 2022",
+        "role": "Jr. Software Engineer Intern",
+        "company": "McKinsey & Company",
+        "impact": "Built a web app to extract and display zip contents in-browser; created dynamic UI for viewing/editing CSV and JSON with rollback/version control; enabled downloads and diff viewing.",
+        "location": "Bangalore, India",
+        "techStack": [
+          "Next.js",
+          "React",
+          "JavaScript",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "period": "Sep 2020 — Dec 2020",
+        "role": "Software Development Intern",
+        "company": "Zooked Inc",
+        "impact": "Built reusable UI components, layouts, and pages in Angular from conceptual designs with strong attention to UI details.",
+        "location": "WFH (Bangalore), India",
+        "techStack": [
+          "Angular",
+          "TypeScript",
+          "SCSS"
+        ]
+      },
+      {
+        "period": "Jul 2020 — Aug 2020",
+        "role": "Software Development Intern",
+        "company": "UST Global",
+        "impact": "Built a frontend platform using Streamlit to support internal API testing workflows.",
+        "location": "WFH (Trivandrum), India",
+        "techStack": [
+          "Streamlit",
+          "Python"
+        ]
+      }
+    ]
+  },
+  "human": {
+    "label": "Beyond Code",
+    "headlinePart1": "More than",
+    "headlineAccent": "engineering",
+    "description": "I enjoy building software and also love staying creative and active outside work.",
+    "interests": [
+      {
+        "icon": "PenTool",
+        "title": "UI/UX Design",
+        "description": "Design thinking, clean layouts, and translating ideas into polished interfaces."
+      },
+      {
+        "icon": "Music",
+        "title": "Music",
+        "description": "Musical instruments: guitar, drums, ukulele."
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Dance",
+        "description": "Movement, rhythm, and performance energy."
+      },
+      {
+        "icon": "Dumbbell",
+        "title": "Fitness",
+        "description": "Staying active and consistent — physically and mentally."
+      }
+    ],
+    "closingQuote": "Great engineering comes from curiosity, craft, and a life that stays interesting."
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "headlinePart1": "Let's build something",
+    "headlineAccent": "reliable",
+    "description": "If you want to collaborate, discuss opportunities, or just say hello — I'd love to connect.",
+    "primaryCta": "Say Hello",
+    "footer": {
+      "credit": "Designed & built with obsessive attention to detail",
+      "copyright": "© Shreehari Thakral. All rights reserved."
+    }
+  },
+  "links": {
+    "email": "shreehari.thakral06@gmail.com",
+    "github": "https://github.com/shreehari06",
+    "githubDisplay": "github.com/shreehari06",
+    "linkedin": "https://www.linkedin.com/in/shreehari06",
+    "linkedinDisplay": "linkedin.com/in/shreehari06",
+    "resumeUrl": "/Shreehari-Thakral-Resume.pdf"
+  },
+  "navigation": {
+    "cursorLabels": {
+      "email": "Send Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "resume": "Download Resume",
+      "lightMode": "Light Mode",
+      "darkMode": "Dark Mode"
+    },
+    "sections": [
+      { "id": "hero", "label": "Home" },
+      { "id": "philosophy", "label": "Philosophy" },
+      { "id": "capabilities", "label": "Capabilities" },
+      { "id": "work", "label": "Promotion Advisor" },
+      { "id": "hackathon", "label": "Hackathon" },
+      { "id": "experience", "label": "Experience" },
+      { "id": "human", "label": "Beyond Code" },
+      { "id": "contact", "label": "Contact" }
+    ]
+  },
+  "seo": {
+    "title": "Shreehari Thakral — UI-First Full-Stack Product Engineer",
+    "description": "UI-first product engineer building full-stack systems and GenAI-assisted workflows that stay reliable in production.",
+    "ogTitle": "Shreehari Thakral — UI-First Full-Stack Product Engineer",
+    "ogDescription": "Frontend SME with ~4 years of full-stack ownership. Building data-heavy product workflows, production-grade observability, and GenAI-assisted features."
+  }
+}
