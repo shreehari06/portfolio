@@ -34,7 +34,7 @@ const CommandPaletteHint = () => {
   };
 
   // Mobile: Hide entirely - navigation is handled by WayfindingRail section picker
-  // Resume download is in MobileNav social dock
+  // Resume link is in MobileNav social dock
   if (isMobile) {
     return null;
   }

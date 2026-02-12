@@ -3,8 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Github, Linkedin, FileText, Moon, Sun, X } from 'lucide-react';
 import type { NavigationSection, Links } from '@/content/schema';
 import { useMobileNav } from './MobileNavContext';
-import { downloadResume } from '@/utils/downloadResume';
-
 interface MobileDockProps {
   sections: NavigationSection[];
   links: Links;
@@ -178,14 +176,16 @@ const MobileDock = ({ sections, links }: MobileDockProps) => {
                   <Linkedin className="w-4 h-4" />
                 </a>
 
-                {/* Resume download */}
-                <button
-                  onClick={downloadResume}
+                {/* Resume link */}
+                <a
+                  href={links.resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-9 h-9 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted/30 transition-colors"
-                  aria-label="Download resume"
+                  aria-label="Resume"
                 >
                   <FileText className="w-4 h-4" />
-                </button>
+                </a>
 
                 {/* Theme toggle */}
                 <button

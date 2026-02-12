@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, FileText, Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import type { Links, CursorLabels } from '@/content/schema';
-import { downloadResume } from '@/utils/downloadResume';
-
 interface FloatingNavProps {
   links: Links;
   cursorLabels: CursorLabels;
@@ -60,17 +58,19 @@ const FloatingNav = ({ links, cursorLabels }: FloatingNavProps) => {
           </motion.a>
         ))}
         
-        {/* Resume download button */}
-        <motion.button
-          onClick={downloadResume}
+        {/* Resume link */}
+        <motion.a
+          href={links.resumeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="p-3 rounded-xl text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-all duration-300"
           data-cursor={cursorLabels.resume}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          aria-label="Download Resume"
+          aria-label="Resume"
         >
           <FileText className="w-4 h-4" />
-        </motion.button>
+        </motion.a>
         
         <div className="w-full h-px bg-border/50 my-1" />
         
