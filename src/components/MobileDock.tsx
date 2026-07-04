@@ -18,42 +18,44 @@ const MobileDock = ({ sections, links }: MobileDockProps) => {
   const { setSectionPickerOpen, isInCinematicZone } = useMobileNav();
   const lastScrollY = useRef(0);
   const scrollTimeout = useRef<number>();
-  const observerRef = useRef<IntersectionObserver | null>(null);
+  const isScrollingRef = useRef(false);
+  const clickScrollTimeoutRef = useRef<number>();
 
   // Sync section picker state with context
   useEffect(() => {
     setSectionPickerOpen(isSectionPickerOpen);
   }, [isSectionPickerOpen, setSectionPickerOpen]);
 
-  // IntersectionObserver for scrollspy
+  // Reset programmatic scroll lock on manual user interaction
   useEffect(() => {
-    observerRef.current = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: '-20% 0px -50% 0px',
-        threshold: [0.3, 0.5, 0.7],
+    const resetScrollLock = () => {
+      if (isScrollingRef.current) {
+        isScrollingRef.current = false;
+        if (clickScrollTimeoutRef.current) {
+          clearTimeout(clickScrollTimeoutRef.current);
+          clickScrollTimeoutRef.current = undefined;
+        }
+        document.body.style.pointerEvents = '';
       }
-    );
+    };
 
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element && observerRef.current) {
-        observerRef.current.observe(element);
-      }
-    });
+    window.addEventListener('wheel', resetScrollLock, { passive: true });
+    window.addEventListener('touchmove', resetScrollLock, { passive: true });
+    window.addEventListener('mousedown', resetScrollLock, { passive: true });
+    window.addEventListener('keydown', resetScrollLock, { passive: true });
 
     return () => {
-      observerRef.current?.disconnect();
+      window.removeEventListener('wheel', resetScrollLock);
+      window.removeEventListener('touchmove', resetScrollLock);
+      window.removeEventListener('mousedown', resetScrollLock);
+      window.removeEventListener('keydown', resetScrollLock);
+      if (clickScrollTimeoutRef.current) {
+        clearTimeout(clickScrollTimeoutRef.current);
+      }
     };
-  }, [sections]);
+  }, []);
 
-  // Auto-hide on scroll down, show on scroll up
+  // Combined scrolling listener for visibility and offset-based scrollspy
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
@@ -78,21 +80,60 @@ const MobileDock = ({ sections, links }: MobileDockProps) => {
       scrollTimeout.current = window.setTimeout(() => {
         setIsVisible(true);
       }, 1000);
+
+      // ScrollSpy: Calculate active section based on offset position in real-time
+      if (!isScrollingRef.current) {
+        if (currentY <= 50) {
+          setActiveSection(sections[0]?.id || '');
+          return;
+        }
+        if (currentY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
+          setActiveSection(sections[sections.length - 1]?.id || '');
+          return;
+        }
+
+        const scrollTrigger = currentY + window.innerHeight * 0.4; // 40% bias
+        let currentActive = sections[0]?.id || '';
+
+        for (const section of sections) {
+          const element = document.getElementById(section.id);
+          if (element) {
+            if (scrollTrigger >= element.offsetTop) {
+              currentActive = section.id;
+            }
+          }
+        }
+
+        setActiveSection(currentActive);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    // Run once on mount to synchronize initial scroll position
+    handleScroll();
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       if (scrollTimeout.current) {
         clearTimeout(scrollTimeout.current);
       }
     };
-  }, []);
+  }, [sections]);
 
   const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
+      isScrollingRef.current = true;
+      setActiveSection(sectionId);
+      
+      document.body.style.pointerEvents = 'none';
       element.scrollIntoView({ behavior: 'smooth' });
+      
+      if (clickScrollTimeoutRef.current) clearTimeout(clickScrollTimeoutRef.current);
+      clickScrollTimeoutRef.current = window.setTimeout(() => {
+        isScrollingRef.current = false;
+        document.body.style.pointerEvents = '';
+      }, 1000);
     }
     setIsSectionPickerOpen(false);
   }, []);
