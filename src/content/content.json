@@ -78,7 +78,7 @@
         "description": "APIs and services with pragmatic architecture, reliable delivery, and custom integrations.",
         "skills": [
           "Node.js",
-          "GraphQL (Subscriptions)",
+          "GraphQL",
           ".NET",
           "PostgreSQL",
           "REST APIs",
@@ -157,7 +157,15 @@
       {
         "title": "Promotion Advisor — GenAI Features (Insights & Validation)",
         "description": "Integrating GenAI capabilities inside Promotion Advisor: insights-style assistance, validation agents, and React-based tool calling designed to improve workflow quality, speed, and user trust.",
-        "tags": ["GenAI", "AutoGen", "React", "TypeScript", "Human-in-the-Loop", "Databricks Genie", "LLM Integrations"],
+        "tags": [
+          "GenAI",
+          "AutoGen",
+          "React",
+          "TypeScript",
+          "Human-in-the-Loop",
+          "Databricks Genie",
+          "LLM Integrations"
+        ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
@@ -179,7 +187,15 @@
       {
         "title": "Promotion Advisor — UI SME & Overhauls",
         "description": "Delivering scalable React + TypeScript interfaces, leading full-page overhauls, and shaping UX patterns for complex, data-heavy Revenue Growth Management workflows.",
-        "tags": ["React", "TypeScript", "UX/UI Performance", "Tailwind CSS", "Framer Motion", "AG Grid", "Figma"],
+        "tags": [
+          "React",
+          "TypeScript",
+          "UX/UI Performance",
+          "Tailwind CSS",
+          "Framer Motion",
+          "AG Grid",
+          "Figma"
+        ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
@@ -201,7 +217,14 @@
       {
         "title": "Promotion Advisor — Real-Time Broadcasting & Search",
         "description": "Engineering real-time data broadcasting and responsive workflows using WebSockets and GraphQL subscriptions.",
-        "tags": ["WebSockets", "GraphQL Subscriptions", "Node.js", "APIs", "Performance", "Optimization"],
+        "tags": [
+          "WebSockets",
+          "GraphQL Subscriptions",
+          "Node.js",
+          "APIs",
+          "Performance",
+          "Optimization"
+        ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
@@ -220,7 +243,14 @@
       {
         "title": "Promotion Advisor — Observability & CI/CD Pipelines",
         "description": "Improving production visibility with OpenTelemetry and Dynatrace, and automating configurations via matrix pipelines.",
-        "tags": ["OpenTelemetry", "Dynatrace", "GitLab CI/CD", "Docker", "DevOps", "Reliability"],
+        "tags": [
+          "OpenTelemetry",
+          "Dynatrace",
+          "GitLab CI/CD",
+          "Docker",
+          "DevOps",
+          "Reliability"
+        ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
@@ -239,7 +269,14 @@
       {
         "title": "Promotion Advisor — Data Visualization & Contracts",
         "description": "Enhancing reporting UX with Power BI and AG Grid, and implementing cloud-based data contract integrations.",
-        "tags": ["Power BI", "AG Grid", "Protobuf", "Azure ADLS", "Node.js", "PostgreSQL"],
+        "tags": [
+          "Power BI",
+          "AG Grid",
+          "Protobuf",
+          "Azure ADLS",
+          "Node.js",
+          "PostgreSQL"
+        ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
