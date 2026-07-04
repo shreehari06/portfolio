@@ -55,6 +55,6 @@ describe('CommandPaletteContext', () => {
   it('should throw error when used outside provider', () => {
     expect(() => {
       renderHook(() => useCommandPalette());
-    }).toThrow('useCommandPalette must be used within CommandPaletteProvider');
+    }).toThrow('useCommandPalette must be used within a CommandPaletteProvider');
   });
 });

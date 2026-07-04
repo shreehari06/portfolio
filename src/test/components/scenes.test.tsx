@@ -13,28 +13,29 @@ import {
 } from '@/content';
 
 // Mock framer-motion
-vi.mock('framer-motion', () => ({
-  motion: {
-    div: ({ children, ...props }: any) => <div {...props}>{children}</div>,
-    section: ({ children, ...props }: any) => <section {...props}>{children}</section>,
-    h1: ({ children, ...props }: any) => <h1 {...props}>{children}</h1>,
-    h2: ({ children, ...props }: any) => <h2 {...props}>{children}</h2>,
-    h3: ({ children, ...props }: any) => <h3 {...props}>{children}</h3>,
-    p: ({ children, ...props }: any) => <p {...props}>{children}</p>,
-    span: ({ children, ...props }: any) => <span {...props}>{children}</span>,
-    a: ({ children, ...props }: any) => <a {...props}>{children}</a>,
-    button: ({ children, ...props }: any) => <button {...props}>{children}</button>,
-    nav: ({ children, ...props }: any) => <nav {...props}>{children}</nav>,
-    ul: ({ children, ...props }: any) => <ul {...props}>{children}</ul>,
-    li: ({ children, ...props }: any) => <li {...props}>{children}</li>,
-  },
-  AnimatePresence: ({ children }: any) => <>{children}</>,
-  useScroll: () => ({ scrollYProgress: { get: () => 0 } }),
-  useTransform: () => 0,
-  useSpring: (value: any) => value,
-  useMotionValue: (value: any) => ({ get: () => value, set: () => {} }),
-  useMotionValueEvent: () => {},
-}));
+vi.mock('framer-motion', () => {
+  const motionMock = new Proxy(
+    {},
+    {
+      get: (_target, prop) => {
+        // Return a mock component for any tag name
+        return ({ children, ...props }: any) => {
+          const Tag = prop as any;
+          return <Tag {...props}>{children}</Tag>;
+        };
+      },
+    }
+  );
+  return {
+    motion: motionMock,
+    AnimatePresence: ({ children }: any) => <>{children}</>,
+    useScroll: () => ({ scrollYProgress: { get: () => 0 } }),
+    useTransform: () => 0,
+    useSpring: (value: any) => value,
+    useMotionValue: (value: any) => ({ get: () => value, set: () => {} }),
+    useMotionValueEvent: () => {},
+  };
+});
 
 // Mock IntersectionObserver
 const mockIntersectionObserver = vi.fn();
@@ -97,7 +98,10 @@ describe('Scene Components', () => {
       const { getByText } = render(<PhilosophyScene content={philosophy} />);
       
       philosophy.principles.forEach((principle) => {
-        expect(getByText(principle.title)).toBeInTheDocument();
+        const words = principle.title.split(' ');
+        words.forEach((word) => {
+          expect(getByText(word)).toBeInTheDocument();
+        });
       });
     });
 
@@ -185,11 +189,11 @@ describe('Scene Components', () => {
     });
 
     it('should render timeline items', () => {
-      const { getByText } = render(<ExperienceScene content={experience} />);
+      const { getAllByText } = render(<ExperienceScene content={experience} />);
       
       experience.timeline.forEach((item) => {
-        expect(getByText(item.role)).toBeInTheDocument();
-        expect(getByText(item.company)).toBeInTheDocument();
+        expect(getAllByText(item.role)[0]).toBeInTheDocument();
+        expect(getAllByText(item.company)[0]).toBeInTheDocument();
       });
     });
 

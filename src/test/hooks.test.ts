@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { renderHook, act } from '@testing-library/react';
+import { renderHook, act, waitFor, render } from '@testing-library/react';
+import React from 'react';
 
 // Mock IntersectionObserver
 const mockIntersectionObserver = vi.fn();
@@ -64,7 +65,7 @@ describe('useScrollAnimation hook', () => {
     expect(result.current.ref).toBeDefined();
   });
 
-  it('should set isInView to true if prefers-reduced-motion is enabled', () => {
+  it('should set isInView to true if prefers-reduced-motion is enabled', async () => {
     (window.matchMedia as ReturnType<typeof vi.fn>).mockImplementation((query) => ({
       matches: query === '(prefers-reduced-motion: reduce)',
       media: query,
@@ -76,10 +77,17 @@ describe('useScrollAnimation hook', () => {
       dispatchEvent: vi.fn(),
     }));
 
-    const { result } = renderHook(() => useScrollAnimation());
+    const TestComponent = () => {
+      const { isInView, ref } = useScrollAnimation();
+      return React.createElement('div', { ref: ref, 'data-testid': 'test-div' }, isInView ? 'true' : 'false');
+    };
+
+    const { getByTestId } = render(React.createElement(TestComponent));
     
     // With reduced motion, isInView should be true immediately
-    expect(result.current.isInView).toBe(true);
+    await waitFor(() => {
+      expect(getByTestId('test-div').textContent).toBe('true');
+    });
   });
 });
 

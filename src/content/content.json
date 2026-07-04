@@ -1,15 +1,15 @@
 {
   "site": {
     "name": "Shreehari Thakral",
-    "title": "UI-First Full-Stack Product Engineer",
+    "title": "UI-First Full-Stack Software Engineer",
     "location": "Bengaluru, India",
-    "shortIntro": "UI-first product engineer building full-stack systems and GenAI-assisted workflows that stay reliable in production."
+    "shortIntro": "UI-first, full-stack software engineer building reliable enterprise systems, high-performance interfaces, and GenAI-assisted workflows."
   },
   "hero": {
-    "label": "UI-First Full-Stack Product Engineer",
+    "label": "UI-First Full-Stack Software Engineer",
     "headlinePart1": "I craft UI that feels effortless",
     "headlineAccent": "at scale",
-    "subheadline": "Frontend SME with ~4 years of full-stack ownership. I build data-heavy product workflows, production-grade observability, and GenAI-assisted features designed for trust (clarity, guardrails, and human-in-the-loop control).",
+    "subheadline": "Frontend SME with 4 years of full-stack ownership. I build data-heavy product workflows, production-grade observability, and GenAI-assisted features designed for trust (clarity, guardrails, and human-in-the-loop control).",
     "primaryCta": {
       "text": "Explore",
       "href": "#capabilities",
@@ -59,66 +59,76 @@
     "groups": [
       {
         "category": "Frontend (UI Craft)",
-        "description": "Scalable, high-quality interfaces with strong UX instincts and attention to detail.",
+        "description": "Scalable, high-quality interfaces with strong UX instincts, attention to detail, and performance virtualization.",
         "skills": [
           "React",
           "TypeScript",
-          "Angular",
+          "JavaScript",
           "HTML",
           "CSS",
-          "Framer Motion",
+          "Angular",
           "AG Grid",
+          "CSS Frameworks",
+          "UI/UX Performance",
           "Figma"
         ]
       },
       {
         "category": "Backend (Full-Stack Delivery)",
-        "description": "APIs and services with pragmatic architecture and reliable delivery.",
+        "description": "APIs and services with pragmatic architecture, reliable delivery, and custom integrations.",
         "skills": [
-          "Node.js (Fastify)",
-          "GraphQL",
+          "Node.js",
+          "GraphQL (Subscriptions)",
           ".NET",
           "PostgreSQL",
-          "Redis",
+          "REST APIs",
+          "Protobuf",
           "WebSockets",
-          "protobuf"
+          "JSON Schema validations",
+          "YAML"
         ]
       },
       {
-        "category": "GenAI Product Engineering",
+        "category": "GenAI & Emerging Tech",
         "description": "Designing GenAI-assisted workflows with strong UX, guardrails, and human-in-the-loop control.",
         "skills": [
-          "LLM API integration",
-          "Multimodal extraction (text + images)",
-          "Insights / validation agents",
-          "Prompting & structured outputs",
-          "UX for trust (controls, explanations, feedback)"
+          "GenAI",
+          "Cursor",
+          "Claude Code",
+          "Databricks Genie",
+          "AutoGen",
+          "OpenAI SDK",
+          "LLM Integrations",
+          "Prompting",
+          "Human-in-the-Loop"
         ]
       },
       {
         "category": "Reliability & Observability",
-        "description": "Visibility into systems and dependable releases through instrumentation and automation.",
+        "description": "Visibility into systems and dependable releases through instrumentation, automation, and security analysis.",
         "skills": [
-          "OpenTelemetry (OTEL)",
           "Dynatrace",
-          "CI/CD",
-          "GitLab",
-          "Testing",
-          "Linting",
-          "Locust"
+          "OpenTelemetry",
+          "OWASP",
+          "SonarQube",
+          "Locust",
+          "Automated Testing",
+          "Performance Profiling",
+          "GitLab CI/CD",
+          "Docker"
         ]
       },
       {
-        "category": "Product & Collaboration",
-        "description": "Working closely with stakeholders, mentoring engineers, and making teams move faster.",
+        "category": "Product & Tools",
+        "description": "Working closely with stakeholders, using modern workflows, and helping teams deliver faster.",
         "skills": [
-          "Stakeholder Collaboration",
-          "Frontend SME",
+          "Power BI",
+          "Postman / Bruno",
+          "Jira & Confluence",
+          "Miro",
+          "Agile & Scrum",
           "Mentorship",
-          "L3 Support",
-          "Jira",
-          "Confluence",
-          "Miro"
+          "L3 Support Lead"
         ]
       }
     ],
@@ -145,99 +155,104 @@
     },
     "projects": [
       {
-        "title": "Promotion Advisor — GenAI Features (Insights + Validation Agents)",
-        "description": "Currently integrating GenAI capabilities inside Promotion Advisor (internal): insights-style assistance and validation agents designed to improve workflow quality, speed, and user trust.",
-        "tags": ["Internal", "GenAI", "Agents", "Product UX", "Workflow Quality"],
+        "title": "Promotion Advisor — GenAI Features (Insights & Validation)",
+        "description": "Integrating GenAI capabilities inside Promotion Advisor: insights-style assistance, validation agents, and React-based tool calling designed to improve workflow quality, speed, and user trust.",
+        "tags": ["GenAI", "AutoGen", "React", "TypeScript", "Human-in-the-Loop", "Databricks Genie", "LLM Integrations"],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal GenAI exploration and delivery. Described at a high level without confidential implementation details.",
+          "context": "Internal GenAI feature exploration, prototyping, and production delivery. Described at a high level without confidential implementation details.",
           "whatIOwned": [
-            "Exploration → prototyping → delivery of GenAI-assisted UX",
-            "Human-in-the-loop patterns and guardrails",
-            "Quality and validation mindset for enterprise workflows"
+            "AutoGen tool calling integration with React frontend",
+            "Human-in-the-loop UX patterns and guardrails",
+            "AI capabilities for data grid validation and filtering",
+            "Prototyping recipe automation with Databricks Genie"
           ],
           "technicalHighlights": [
-            "Insights agent patterns (summaries, suggestions, explanations)",
-            "Validation agent patterns (checks, warnings, input consistency)",
-            "UX design for trust: clarity, controllability, and feedback loops"
+            "AI-native features with dynamic UI tool calling",
+            "LLM-assisted data grid analysis and validation checks",
+            "UX patterns designed for user trust and feedback loops",
+            "Coordinating firm-wide AI developer tooling pilots"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — Frontend Platform & Product Experience",
-        "description": "Frontend SME work delivering scalable React + TypeScript interfaces and shaping UX patterns for complex, data-heavy workflows (internal).",
-        "tags": ["Internal", "React", "TypeScript", "UI Architecture", "UX Patterns"],
+        "title": "Promotion Advisor — UI SME & Overhauls",
+        "description": "Delivering scalable React + TypeScript interfaces, leading full-page overhauls, and shaping UX patterns for complex, data-heavy Revenue Growth Management workflows.",
+        "tags": ["React", "TypeScript", "UX/UI Performance", "Tailwind CSS", "Framer Motion", "AG Grid", "Figma"],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal product work on Promotion Advisor. Details are intentionally sanitized.",
+          "context": "Frontend leadership and core module ownership. Details are sanitized for confidentiality.",
           "whatIOwned": [
-            "Frontend architecture and scalable UI patterns",
-            "Cross-functional collaboration with stakeholders",
-            "Quality bar for UI/UX consistency and performance"
+            "UI Subject Matter Expert role for Promotion Advisor 2.0",
+            "Overhaul of Promotion Overview and Scenarios compare UI",
+            "Dynamic client item grouping via dynamic query filters",
+            "Recommendations UI and virtualization performance optimizations"
           ],
           "technicalHighlights": [
-            "Component-driven architecture, clean state flows, strong typing",
-            "Micro-interactions and responsive layouts for dense data screens",
-            "Performance-minded UI decisions for real-world usage"
+            "Collapsible sidebars, fluid animations, and responsive compare views",
+            "Grid-based Recommendations UI engineered from scratch",
+            "Dropdown virtualization handling over 10,000 values",
+            "Ad-hoc L3 Support leadership for production stability"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — Real-Time Workflows",
-        "description": "Implemented real-time experiences and workflow responsiveness with WebSockets (internal), with a focus on reliability and operational readiness.",
-        "tags": ["Internal", "WebSockets", "Reliability", "Operations"],
+        "title": "Promotion Advisor — Real-Time Broadcasting & Search",
+        "description": "Engineering real-time data broadcasting and responsive workflows using WebSockets and GraphQL subscriptions.",
+        "tags": ["WebSockets", "GraphQL Subscriptions", "Node.js", "APIs", "Performance", "Optimization"],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal workflows requiring responsive updates and production-grade behavior.",
+          "context": "Internal workflows requiring responsive multi-user updates and low-latency broadcasting.",
           "whatIOwned": [
-            "Real-time UX patterns and integration points",
-            "Operational support mindset (stability, quick debugging)"
+            "Real-time data broadcasting for the Cross Desk View",
+            "Global Search APIs and multi-user sync patterns"
           ],
           "technicalHighlights": [
-            "Event-driven UI updates and predictable state transitions",
-            "Edge-case handling for reconnects / stale states",
-            "Pragmatic monitoring hooks to reduce incident time"
+            "WebSockets and GraphQL subscriptions implementation",
+            "High-grain reverse index to eliminate redundant broadcast cycles",
+            "Significant responsiveness improvements and reduced workflow latency"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — Observability & Dashboards",
-        "description": "Improved production visibility with OpenTelemetry + Dynatrace instrumentation and custom dashboards (internal).",
-        "tags": ["Internal", "OpenTelemetry", "Dynatrace", "Dashboards"],
+        "title": "Promotion Advisor — Observability & CI/CD Pipelines",
+        "description": "Improving production visibility with OpenTelemetry and Dynatrace, and automating configurations via matrix pipelines.",
+        "tags": ["OpenTelemetry", "Dynatrace", "GitLab CI/CD", "Docker", "DevOps", "Reliability"],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal observability improvements to reduce time-to-diagnosis and increase confidence in releases.",
+          "context": "Production telemetry improvements and automated release workflows to increase deployment confidence.",
           "whatIOwned": [
-            "Instrumentation strategy and integration",
-            "Dashboard design for fast operational insights"
+            "OpenTelemetry SDK integration and Dynatrace migration",
+            "Automating multi-client deployments with GitLab matrix pipelines"
           ],
           "technicalHighlights": [
-            "OTEL SDK integration patterns",
-            "Actionable dashboards aligned to real workflows",
-            "Better visibility into reliability + performance signals"
+            "Dynatrace dashboard design for real-time operational insights",
+            "GitLab CI/CD automated testing and linting matrix configs",
+            "REST APIs deployment configurations for reporting"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — Reporting & Data Visualization",
-        "description": "Enhanced reporting UX with Power BI + AG Grid integrations to support decision workflows (internal).",
-        "tags": ["Internal", "Power BI", "AG Grid", "Data Visualization"],
+        "title": "Promotion Advisor — Data Visualization & Contracts",
+        "description": "Enhancing reporting UX with Power BI and AG Grid, and implementing cloud-based data contract integrations.",
+        "tags": ["Power BI", "AG Grid", "Protobuf", "Azure ADLS", "Node.js", "PostgreSQL"],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal reporting surfaces where clarity and usability matter as much as correctness.",
+          "context": "Internal data reporting and backward-compatible data contracts with downstream systems.",
           "whatIOwned": [
-            "Data-heavy UI composition and interaction design",
-            "Pragmatic integration patterns for embedded reporting"
+            "Power BI and AG Grid data-heavy UI composition",
+            "Dynamic Protobuf generation for cloud storage (ADLS)",
+            "Migrating legacy tactics from SQL to Node.js config frameworks"
           ],
           "technicalHighlights": [
-            "Grid-based UX for large datasets",
-            "Interaction patterns that keep complexity readable",
-            "Performance-aware rendering and layout"
+            "Data-heavy grid layout and visualization composition",
+            "Backward-compatible contract generation with cloud delivery",
+            "Transitioning legacy tactic logic systems to Node.js configurations"
           ]
         }
       }
@@ -327,7 +342,7 @@
     "headlineAccent": "scale",
     "metrics": [
       {
-        "metric": "~4",
+        "metric": "4",
         "label": "Years Experience",
         "description": "Frontend-focused full-stack development"
       },
@@ -349,32 +364,50 @@
     ],
     "timeline": [
       {
-        "period": "Aug 2022 — Present",
+        "period": "Jan 2025 — Present",
         "role": "Software Engineer 2",
         "company": "McKinsey & Company",
-        "impact": "Built product architecture and features end-to-end; delivered scalable UI as Frontend SME; implemented real-time workflows; strengthened CI/CD, observability, and operational reliability; mentored junior engineers.",
-        "location": "Bangalore, India",
+        "impact": "Acted as UI Subject Matter Expert for Promotion Advisor 2.0; led full-page Promotion Overview and Scenarios UI overhauls with fluid animations; implemented AI-native features using AutoGen; developed WebSocket and GraphQL subscriptions real-time broadcasting.",
+        "location": "Bengaluru, India",
         "techStack": [
           "React",
           "TypeScript",
-          "Fastify",
+          "AutoGen",
+          "Databricks Genie",
+          "GenAI",
+          "GraphQL",
+          "WebSockets",
+          "Node.js"
+        ]
+      },
+      {
+        "period": "Aug 2022 — Dec 2024",
+        "role": "Software Engineer 1",
+        "company": "McKinsey & Company",
+        "impact": "Led frontend development for Dynamic Promo Group; engineered responsive Recommendations UI; optimized selector performance using virtualization (10k+ values); automated GitLab matrix CI/CD pipelines; integrated OpenTelemetry and migrated Dynatrace dashboards.",
+        "location": "Bengaluru, India",
+        "techStack": [
+          "React",
+          "TypeScript",
+          "Node.js",
           ".NET",
           "PostgreSQL",
           "GraphQL",
-          "Redis",
+          "Azure (ADLS, Redis)",
           "OpenTelemetry",
           "Dynatrace",
           "GitLab",
           "Power BI",
-          "AG Grid"
+          "AG Grid",
+          "GitHub Copilot"
         ]
       },
       {
         "period": "Feb 2022 — Jun 2022",
         "role": "Jr. Software Engineer Intern",
         "company": "McKinsey & Company",
-        "impact": "Built a web app to extract and display zip contents in-browser; created dynamic UI for viewing/editing CSV and JSON with rollback/version control; enabled downloads and diff viewing.",
-        "location": "Bangalore, India",
+        "impact": "Built a web application to extract and preview ZIP contents directly in the browser; developed a dynamic UI to view and edit CSV and JSON files with rollback, version control, and diff viewing capabilities; enabled downloading modified ZIP files with preserved structural changes.",
+        "location": "Bengaluru, India",
         "techStack": [
           "Next.js",
           "React",
@@ -385,9 +418,9 @@
       {
         "period": "Sep 2020 — Dec 2020",
         "role": "Software Development Intern",
-        "company": "Zooked Inc",
-        "impact": "Built reusable UI components, layouts, and pages in Angular from conceptual designs with strong attention to UI details.",
-        "location": "WFH (Bangalore), India",
+        "company": "Zooked Inc.",
+        "impact": "Built reusable UI components, layouts, and pages in Angular, successfully translating conceptual designs into production UI with clean styling in SCSS.",
+        "location": "Remote (Bangalore), India",
         "techStack": [
           "Angular",
           "TypeScript",
@@ -398,8 +431,8 @@
         "period": "Jul 2020 — Aug 2020",
         "role": "Software Development Intern",
         "company": "UST Global",
-        "impact": "Built a frontend platform using Streamlit to support internal API testing workflows.",
-        "location": "WFH (Trivandrum), India",
+        "impact": "Engineered a cutting-edge frontend platform utilizing the Streamlit Framework to facilitate sophisticated and efficient internal API testing.",
+        "location": "Remote (Trivandrum), India",
         "techStack": [
           "Streamlit",
           "Python"
@@ -465,20 +498,44 @@
       "darkMode": "Dark Mode"
     },
     "sections": [
-      { "id": "hero", "label": "Home" },
-      { "id": "philosophy", "label": "Philosophy" },
-      { "id": "capabilities", "label": "Capabilities" },
-      { "id": "work", "label": "Promotion Advisor" },
-      { "id": "hackathon", "label": "Hackathon" },
-      { "id": "experience", "label": "Experience" },
-      { "id": "human", "label": "Beyond Code" },
-      { "id": "contact", "label": "Contact" }
+      {
+        "id": "hero",
+        "label": "Home"
+      },
+      {
+        "id": "philosophy",
+        "label": "Philosophy"
+      },
+      {
+        "id": "capabilities",
+        "label": "Capabilities"
+      },
+      {
+        "id": "work",
+        "label": "Promotion Advisor"
+      },
+      {
+        "id": "hackathon",
+        "label": "Hackathon"
+      },
+      {
+        "id": "experience",
+        "label": "Experience"
+      },
+      {
+        "id": "human",
+        "label": "Beyond Code"
+      },
+      {
+        "id": "contact",
+        "label": "Contact"
+      }
     ]
   },
   "seo": {
-    "title": "Shreehari Thakral — UI-First Full-Stack Product Engineer",
-    "description": "UI-first product engineer building full-stack systems and GenAI-assisted workflows that stay reliable in production.",
-    "ogTitle": "Shreehari Thakral — UI-First Full-Stack Product Engineer",
-    "ogDescription": "Frontend SME with ~4 years of full-stack ownership. Building data-heavy product workflows, production-grade observability, and GenAI-assisted features."
+    "title": "Shreehari Thakral — UI-First Full-Stack Software Engineer",
+    "description": "UI-first, full-stack software engineer building reliable enterprise systems, high-performance interfaces, and GenAI-assisted workflows.",
+    "ogTitle": "Shreehari Thakral — UI-First Full-Stack Software Engineer",
+    "ogDescription": "Frontend SME specializing in React and TypeScript, with 4 years of experience building enterprise products end-to-end."
   }
 }
