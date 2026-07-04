@@ -17,7 +17,7 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
   const [isMobile, setIsMobile] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-  const [focusedIndex, setFocusedIndex] = useState(-1);
+
   const [pulsingSection, setPulsingSection] = useState<string | null>(null);
   const [showHint, setShowHint] = useState(false);
   const [showKeyboardHint, setShowKeyboardHint] = useState(false);
@@ -28,7 +28,7 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number>();
   const observerRef = useRef<IntersectionObserver | null>(null);
-  const labelRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
   const isScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef<number>();
 
@@ -73,6 +73,7 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
       setShowKeyboardHint(false);
     }
   }, [isExpanded]);
+
 
   // Reset programmatic scroll lock on manual user interaction
   useEffect(() => {
@@ -180,6 +181,11 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
       scrollTimeoutRef.current = window.setTimeout(() => {
         isScrollingRef.current = false;
         document.body.style.pointerEvents = '';
+        
+        // If the mouse left the nav container during the scroll, collapse it now
+        if (railRef.current && !railRef.current.matches(':hover')) {
+          setIsExpanded(false);
+        }
       }, 1000);
     }
     setIsMobileMenuOpen(false);
@@ -196,15 +202,34 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
         return;
       }
 
-      switch (e.key.toLowerCase()) {
+      const currentIndex = sections.findIndex((s) => s.id === activeSection);
+
+      switch (e.key) {
         case 'n':
+        case 'N':
           e.preventDefault();
           setIsExpanded(prev => !prev);
           break;
-        case 'escape':
+        case 'Escape':
           if (isExpanded) {
             e.preventDefault();
             setIsExpanded(false);
+          }
+          break;
+        case 'ArrowLeft':
+          if (isExpanded) {
+            e.preventDefault();
+            if (currentIndex > 0) {
+              scrollToSection(sections[currentIndex - 1].id);
+            }
+          }
+          break;
+        case 'ArrowRight':
+          if (isExpanded) {
+            e.preventDefault();
+            if (currentIndex < sections.length - 1) {
+              scrollToSection(sections[currentIndex + 1].id);
+            }
           }
           break;
       }
@@ -212,48 +237,7 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
 
     window.addEventListener('keydown', handleGlobalKeyDown);
     return () => window.removeEventListener('keydown', handleGlobalKeyDown);
-  }, [isMobile, isExpanded]);
-
-  // Handle keyboard navigation within rail
-  const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
-    const currentIndex = sections.findIndex((s) => s.id === activeSection);
-    
-    switch (e.key) {
-      case 'ArrowLeft':
-        e.preventDefault();
-        if (currentIndex > 0) {
-          const newIndex = currentIndex - 1;
-          setFocusedIndex(newIndex);
-          labelRefs.current[newIndex]?.focus();
-          if (isExpanded) {
-            scrollToSection(sections[newIndex].id);
-          }
-        }
-        break;
-      case 'ArrowRight':
-        e.preventDefault();
-        if (currentIndex < sections.length - 1) {
-          const newIndex = currentIndex + 1;
-          setFocusedIndex(newIndex);
-          labelRefs.current[newIndex]?.focus();
-          if (isExpanded) {
-            scrollToSection(sections[newIndex].id);
-          }
-        }
-        break;
-      case 'Enter':
-      case ' ':
-        e.preventDefault();
-        if (focusedIndex >= 0) {
-          scrollToSection(sections[focusedIndex].id);
-        }
-        break;
-      case 'Escape':
-        e.preventDefault();
-        setIsExpanded(false);
-        break;
-    }
-  }, [activeSection, focusedIndex, sections, scrollToSection, isExpanded]);
+  }, [isMobile, isExpanded, activeSection, sections, scrollToSection]);
 
   const transitionDuration = prefersReducedMotion ? 0 : 0.25;
 
@@ -287,10 +271,9 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
       className="fixed left-1/2 top-6 z-30"
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => {
+        if (isScrollingRef.current) return;
         setIsExpanded(false);
-        setFocusedIndex(-1);
       }}
-      onKeyDown={handleKeyDown}
       role="navigation"
       aria-label="Page sections"
     >
@@ -335,21 +318,18 @@ const WayfindingRail = ({ sections }: WayfindingRailProps) => {
               transition={{ duration: 0.15, delay: 0.05 }}
               className="flex items-center justify-between w-full px-6"
             >
-              {sections.map((section, index) => {
+              {sections.map((section) => {
                 const isActive = activeSection === section.id;
-                const isFocused = focusedIndex === index;
                 
                 return (
                   <button
                     key={section.id}
-                    ref={(el) => { labelRefs.current[index] = el; }}
                     className={`text-[10px] tracking-widest uppercase whitespace-nowrap transition-all duration-200 focus:outline-none py-1 relative ${
                       isActive 
                         ? 'text-primary font-semibold' 
                         : 'text-muted-foreground hover:text-foreground'
                     }`}
                     onClick={() => scrollToSection(section.id)}
-                    onFocus={() => setFocusedIndex(index)}
                     aria-label={`Jump to ${section.label}`}
                     aria-current={isActive ? 'true' : undefined}
                     tabIndex={0}
