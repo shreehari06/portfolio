@@ -9,7 +9,6 @@ interface HeroSceneProps {
 
 const HeroScene = ({ content }: HeroSceneProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const scrollAnimRef = useRef<number | null>(null);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -27,6 +26,24 @@ const HeroScene = ({ content }: HeroSceneProps) => {
   
   // Scale for depth perception
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.95]);
+
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Prevent hover interactions from interrupting the scroll
+    document.body.style.pointerEvents = 'none';
+
+    target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+
+    // Re-enable pointer events after scroll finishes
+    setTimeout(() => {
+      document.body.style.pointerEvents = '';
+    }, 1000);
+  };
 
   return (
     <section ref={containerRef} className="scene relative" id="hero">
@@ -76,56 +93,7 @@ const HeroScene = ({ content }: HeroSceneProps) => {
             href={content.primaryCta.href}
             className="px-8 py-4 bg-primary text-primary-foreground rounded-full body-base font-medium hover-lift hover-glow"
             data-cursor={content.primaryCta.cursorLabel}
-            onClick={(e) => {
-              e.preventDefault();
-              const target = document.querySelector(content.primaryCta.href);
-              if (!target) return;
-
-              const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-              const rect = target.getBoundingClientRect();
-              const targetTop = window.pageYOffset + rect.top - (window.innerHeight * 0.08);
-
-              // Cancel any in-flight scroll animation
-              if (scrollAnimRef.current) {
-                cancelAnimationFrame(scrollAnimRef.current);
-                scrollAnimRef.current = null;
-              }
-
-              // Prevent hover interactions from interrupting the scroll
-              const prevPointerEvents = document.documentElement.style.pointerEvents;
-              document.documentElement.style.pointerEvents = 'none';
-
-              if (prefersReducedMotion) {
-                window.scrollTo({ top: targetTop });
-                document.documentElement.style.pointerEvents = prevPointerEvents;
-                return;
-              }
-
-              const startY = window.scrollY;
-              const delta = targetTop - startY;
-              const distance = Math.abs(delta);
-              const duration = Math.min(1400, Math.max(700, distance * 0.6)); // ms
-              const startTime = performance.now();
-
-              const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
-
-              const step = (now: number) => {
-                const elapsed = now - startTime;
-                const t = Math.min(1, elapsed / duration);
-                const y = startY + delta * easeOutCubic(t);
-                window.scrollTo({ top: y });
-
-                if (t < 1) {
-                  scrollAnimRef.current = requestAnimationFrame(step);
-                } else {
-                  scrollAnimRef.current = null;
-                  document.documentElement.style.pointerEvents = prevPointerEvents;
-                }
-              };
-
-              scrollAnimRef.current = requestAnimationFrame(step);
-            }}
+            onClick={(e) => handleScrollTo(e, content.primaryCta.href)}
           >
             {content.primaryCta.text}
           </a>
@@ -133,6 +101,7 @@ const HeroScene = ({ content }: HeroSceneProps) => {
             href={content.secondaryCta.href}
             className="px-8 py-4 border border-border text-foreground rounded-full body-base font-medium hover:bg-secondary/50 transition-colors duration-300"
             data-cursor={content.secondaryCta.cursorLabel}
+            onClick={(e) => handleScrollTo(e, content.secondaryCta.href)}
           >
             {content.secondaryCta.text}
           </a>
