@@ -79,6 +79,7 @@
         "skills": [
           "Node.js",
           "GraphQL",
+          "GraphQL Subscriptions",
           ".NET",
           "PostgreSQL",
           "REST APIs",
@@ -115,7 +116,10 @@
           "Automated Testing",
           "Performance Profiling",
           "GitLab CI/CD",
-          "Docker"
+          "Docker",
+          "Azure (ADLS, Redis, Event Hubs)",
+          "Kafka",
+          "WSL"
         ]
       },
       {
@@ -123,7 +127,9 @@
         "description": "Working closely with stakeholders, using modern workflows, and helping teams deliver faster.",
         "skills": [
           "Power BI",
-          "Postman / Bruno",
+          "Postman",
+          "Bruno",
+          "VS Code",
           "Jira & Confluence",
           "Miro",
           "Agile & Scrum",
@@ -401,10 +407,10 @@
     ],
     "timeline": [
       {
-        "period": "Jan 2025 — Present",
+        "period": "Jul 2025 — Present",
         "role": "Software Engineer 2",
         "company": "McKinsey & Company",
-        "impact": "Acted as UI Subject Matter Expert for Promotion Advisor 2.0; led full-page Promotion Overview and Scenarios UI overhauls with fluid animations; implemented AI-native features using AutoGen; developed WebSocket and GraphQL subscriptions real-time broadcasting.",
+        "impact": "Acted as UI Subject Matter Expert (SME) for Promotion Advisor 2.0; own full-stack development, delivering full-page overhauls, Scenarios compare views, and collapsible sidebars; engineered real-time search APIs and websocket-based broadcasting; implemented AutoGen-driven AI features with human-in-the-loop controls; mentored interns on Databricks Genie SQL recipe automation.",
         "location": "Bengaluru, India",
         "techStack": [
           "React",
@@ -418,32 +424,43 @@
         ]
       },
       {
-        "period": "Aug 2022 — Dec 2024",
+        "period": "Jan 2024 — Jul 2025",
         "role": "Software Engineer 1",
         "company": "McKinsey & Company",
-        "impact": "Led frontend development for Dynamic Promo Group; engineered responsive Recommendations UI; optimized selector performance using virtualization (10k+ values); automated GitLab matrix CI/CD pipelines; integrated OpenTelemetry and migrated Dynatrace dashboards.",
+        "impact": "Led frontend development for Dynamic Promo Group query filters; engineered visual margin recommendations engines; built and automated CI/CD GitLab pipelines for multi-client deployment; integrated OpenTelemetry and migrated Dynatrace dashboards; implemented cloud storage data contracts via dynamic Protobuf generation.",
         "location": "Bengaluru, India",
         "techStack": [
           "React",
           "TypeScript",
           "Node.js",
-          ".NET",
-          "PostgreSQL",
-          "GraphQL",
-          "Azure (ADLS, Redis)",
           "OpenTelemetry",
           "Dynatrace",
-          "GitLab",
-          "Power BI",
+          "GitLab CI/CD",
+          "Protobuf",
+          "Azure ADLS"
+        ]
+      },
+      {
+        "period": "Aug 2022 — Dec 2023",
+        "role": "Junior Software Engineer",
+        "company": "McKinsey & Company",
+        "impact": "Optimized complex data tables using virtualization (10k+ entries) and built core copy-paste modules; served as L3 Support Lead for production issue resolution; migrated legacy SQL promotion tactics to Node.js configurations; integrated Power BI and AG Grid reporting interfaces; spearheaded firm-wide adoption of GitHub Copilot.",
+        "location": "Bengaluru, India",
+        "techStack": [
+          "React",
+          "TypeScript",
+          "Node.js",
           "AG Grid",
-          "GitHub Copilot"
+          "Power BI",
+          "GitHub Copilot",
+          "SQL"
         ]
       },
       {
         "period": "Feb 2022 — Jun 2022",
-        "role": "Jr. Software Engineer Intern",
+        "role": "Junior Software Engineer Intern",
         "company": "McKinsey & Company",
-        "impact": "Built a web application to extract and preview ZIP contents directly in the browser; developed a dynamic UI to view and edit CSV and JSON files with rollback, version control, and diff viewing capabilities; enabled downloading modified ZIP files with preserved structural changes.",
+        "impact": "Built a web application to extract and preview ZIP contents directly in the browser; developed a dynamic UI to view and edit CSV and JSON files with rollback, version control, and diff viewing capabilities.",
         "location": "Bengaluru, India",
         "techStack": [
           "Next.js",
