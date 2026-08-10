@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Award, ExternalLink, ShieldCheck } from 'lucide-react';
 import type { CapabilitiesContent } from '@/content/schema';
 
 interface CapabilitiesSceneProps {
@@ -126,6 +126,60 @@ const CapabilitiesScene = ({ content }: CapabilitiesSceneProps) => {
             </motion.div>
           ))}
         </div>
+
+        {/* Verified Certifications Card */}
+        {content.certifications && content.certifications.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="max-w-5xl mx-auto mt-8"
+          >
+            {content.certifications.map((cert) => (
+              <div
+                key={cert.title}
+                className="card-elevated p-6 sm:p-8 border border-primary/20 bg-gradient-to-r from-primary/5 via-card to-card hover:border-primary/40 transition-all duration-500 hover-lift rounded-2xl"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center flex-shrink-0 text-primary">
+                      <Award className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 mb-1 flex-wrap">
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
+                          <ShieldCheck className="w-3 h-3" />
+                          {cert.issuer} Verified
+                        </span>
+                        <span className="text-xs text-muted-foreground font-mono">
+                          ID: {cert.verificationId.slice(0, 8)}...
+                        </span>
+                      </div>
+                      <h3 className="heading-sm font-semibold text-foreground mb-1">
+                        {cert.title}
+                      </h3>
+                      <p className="body-sm text-muted-foreground max-w-2xl">
+                        {cert.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  <a
+                    href={cert.verificationUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-secondary/80 hover:bg-primary hover:text-primary-foreground text-foreground text-sm font-medium transition-all duration-300 flex-shrink-0 border border-border/50 hover:border-primary/40 group"
+                    data-cursor="Credly Badge"
+                  >
+                    <span>Verify Credential</span>
+                    <ExternalLink className="w-4 h-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        )}
 
         {/* Highlight */}
         <motion.div

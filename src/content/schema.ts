@@ -60,11 +60,20 @@ export interface ClosingStatement {
   suffix: string;
 }
 
+export interface Certification {
+  title: string;
+  issuer: string;
+  verificationUrl: string;
+  verificationId: string;
+  description: string;
+}
+
 export interface CapabilitiesContent {
   label: string;
   headlinePart1: string;
   headlineAccent: string;
   groups: CapabilityGroup[];
+  certifications?: Certification[];
   closingStatement: ClosingStatement;
 }
 

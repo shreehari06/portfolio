@@ -56,11 +56,20 @@ const ClosingStatementSchema = z.object({
   suffix: z.string(),
 });
 
+const CertificationSchema = z.object({
+  title: z.string(),
+  issuer: z.string(),
+  verificationUrl: z.string(),
+  verificationId: z.string(),
+  description: z.string(),
+});
+
 const CapabilitiesSchema = z.object({
   label: z.string(),
   headlinePart1: z.string(),
   headlineAccent: z.string(),
   groups: z.array(CapabilityGroupSchema),
+  certifications: z.array(CertificationSchema).optional(),
   closingStatement: ClosingStatementSchema,
 });
 

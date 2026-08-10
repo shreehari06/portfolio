@@ -1,15 +1,15 @@
 {
   "site": {
     "name": "Shreehari Thakral",
-    "title": "UI-First Full-Stack Software Engineer",
+    "title": "UI-First Full-Stack & Agentic AI Engineer",
     "location": "Bengaluru, India",
-    "shortIntro": "UI-first, full-stack software engineer building reliable enterprise systems, high-performance interfaces, and GenAI-assisted workflows."
+    "shortIntro": "AI-focused, UI-first Full-Stack Software Engineer architecting enterprise systems, high-performance interfaces, and agentic AI workflows."
   },
   "hero": {
-    "label": "UI-First Full-Stack Software Engineer",
+    "label": "UI-First Full-Stack & Agentic AI Engineer",
     "headlinePart1": "I craft UI that feels effortless",
     "headlineAccent": "at scale",
-    "subheadline": "Frontend SME with 4 years of full-stack ownership. I build data-heavy product workflows, production-grade observability, and GenAI-assisted features designed for trust (clarity, guardrails, and human-in-the-loop control).",
+    "subheadline": "Frontend SME with 4 years of enterprise platform ownership at McKinsey. I build high-throughput data pipelines, production observability, and Agentic AI systems with secure context bridges, MCP infrastructure, and human-in-the-loop control.",
     "primaryCta": {
       "text": "Explore",
       "href": "#capabilities",
@@ -33,18 +33,18 @@
     "principles": [
       {
         "number": "01",
-        "title": "UI Clarity",
-        "description": "I care about interfaces that feel effortless—clean hierarchy, predictable interactions, and patterns that reduce cognitive load."
+        "title": "UI Clarity & Performance",
+        "description": "I care about interfaces that feel effortless—clean hierarchy, layout virtualization, and sub-frame rendering optimizations that eliminate cognitive load."
       },
       {
         "number": "02",
         "title": "Own the Whole System",
-        "description": "From architecture to deployment, I like shipping end-to-end features with fast feedback loops and strong collaboration."
+        "description": "From architecture to distributed queue pipelines, I build end-to-end platforms with fast feedback loops, strict type safety, and isolated CI modularization."
       },
       {
         "number": "03",
         "title": "Trust at Scale",
-        "description": "Reliability, observability, and guardrails matter—especially when adding GenAI to real workflows. Great products stay great in production."
+        "description": "Reliability, observability, and permissioned guardrails matter—especially when orchestrating Agentic AI and processing billions of updates in production."
       }
     ],
     "quote": {
@@ -58,77 +58,78 @@
     "headlineAccent": "table",
     "groups": [
       {
-        "category": "Frontend (UI Craft)",
-        "description": "Scalable, high-quality interfaces with strong UX instincts, attention to detail, and performance virtualization.",
+        "category": "AI & Agentic Systems",
+        "description": "Architecting enterprise agent stacks, Model Context Protocol (MCP) infrastructure, secure context bridges, and human-in-the-loop orchestration.",
+        "skills": [
+          "Model Context Protocol (MCP)",
+          "LLM Integrations",
+          "AutoGen",
+          "Databricks Genie",
+          "Context Bridges",
+          "Prompt Engineering",
+          "Human-in-the-Loop",
+          "Cursor",
+          "Claude Code"
+        ]
+      },
+      {
+        "category": "Frontend (UI Architecture)",
+        "description": "High-performance React interfaces, DOM virtualization, rAF render profiling, and modular NX workspace design.",
         "skills": [
           "React",
           "TypeScript",
           "JavaScript",
           "HTML",
           "CSS",
-          "Angular",
           "AG Grid",
-          "CSS Frameworks",
-          "UI/UX Performance",
+          "Angular",
+          "UI Virtualization",
+          "Performance Profiling",
+          "NX Monorepo",
           "Figma"
         ]
       },
       {
-        "category": "Backend (Full-Stack Delivery)",
-        "description": "APIs and services with pragmatic architecture, reliable delivery, and custom integrations.",
+        "category": "Backend & Distributed Systems",
+        "description": "High-throughput APIs, parallel in-memory queueing, and distributed data pipelines processing billions of updates.",
         "skills": [
-          "Node.js",
-          "GraphQL",
-          "GraphQL Subscriptions",
+          "Node.js (Fastify/Express)",
           ".NET",
+          "GraphQL & Subscriptions",
           "PostgreSQL",
           "REST APIs",
           "Protobuf",
           "WebSockets",
-          "JSON Schema validations",
-          "YAML"
+          "Apache Arrow Streams",
+          "Databricks",
+          "Kafka",
+          "Azure (ADLS, Redis, Event Hubs)"
         ]
       },
       {
-        "category": "GenAI & Emerging Tech",
-        "description": "Designing GenAI-assisted workflows with strong UX, guardrails, and human-in-the-loop control.",
-        "skills": [
-          "GenAI",
-          "Cursor",
-          "Claude Code",
-          "Databricks Genie",
-          "AutoGen",
-          "OpenAI SDK",
-          "LLM Integrations",
-          "Prompting",
-          "Human-in-the-Loop"
-        ]
-      },
-      {
-        "category": "Reliability & Observability",
-        "description": "Visibility into systems and dependable releases through instrumentation, automation, and security analysis.",
+        "category": "Reliability, Observability & Security",
+        "description": "Full-stack observability, OpenTelemetry instrumentation, and server-side Data Access Control (DAC) security.",
         "skills": [
           "Dynatrace",
-          "OpenTelemetry",
-          "OWASP",
+          "OpenTelemetry (OTEL)",
           "SonarQube",
-          "Locust",
+          "OWASP Security",
+          "Jest / Vitest",
+          "ESLint",
           "Automated Testing",
-          "Performance Profiling",
+          "Performance Benchmarking",
           "GitLab CI/CD",
-          "Docker",
-          "Azure (ADLS, Redis, Event Hubs)",
-          "Kafka",
-          "WSL"
+          "Docker"
         ]
       },
       {
-        "category": "Product & Tools",
-        "description": "Working closely with stakeholders, using modern workflows, and helping teams deliver faster.",
+        "category": "Product, Tools & Methodologies",
+        "description": "Collaborating across product, design, and engineering to ship high-impact features with speed and agility.",
         "skills": [
           "Power BI",
           "Postman",
           "Bruno",
+          "Cursor",
           "VS Code",
           "Jira & Confluence",
           "Miro",
@@ -138,17 +139,26 @@
         ]
       }
     ],
+    "certifications": [
+      {
+        "title": "Certified Partner Specialist: Gemini Enterprise Agent Development",
+        "issuer": "Google",
+        "verificationUrl": "https://www.credly.com/badges/7397ce3e-1ceb-42dc-a9f1-baf1c6419170",
+        "verificationId": "7397ce3e-1ceb-42dc-a9f1-baf1c6419170",
+        "description": "Demonstrated partner-level expertise in architecting enterprise agent systems, LLM tool calling, context engineering, and Gemini multi-agent workflows."
+      }
+    ],
     "closingStatement": {
       "prefix": "I focus on",
-      "highlight": "UI craft + full-stack ownership",
-      "suffix": "— and I'm now applying the same product mindset to GenAI features: making them useful, trustworthy, and fast to ship."
+      "highlight": "UI craft + distributed full-stack architecture",
+      "suffix": "— and applying this deep systems mindset to Agentic AI: building secure, high-throughput workflows that users can trust."
     }
   },
   "selectedWork": {
     "label": "Selected Work",
     "headlinePart1": "Internal work on",
     "headlineAccent": "Promotion Advisor",
-    "description": "Most of my work is internal and lives inside enterprise environments. Below is a curated, non-confidential view of what I've owned and shipped across Promotion Advisor—focused on product experience, reliability, observability, data-heavy UI, and GenAI exploration.",
+    "description": "Most of my work is internal and lives inside enterprise environments. Below is a curated, non-confidential view of what I've owned and shipped across Promotion Advisor—focused on agentic AI architecture, backend scalability, rendering performance, real-time broadcasting, and release reliability.",
     "productContext": {
       "suite": "Promotion Performance (Periscope® by McKinsey)",
       "product": "Promotion Advisor",
@@ -161,94 +171,127 @@
     },
     "projects": [
       {
-        "title": "Promotion Advisor — GenAI Features (Insights & Validation)",
-        "description": "Integrating GenAI capabilities inside Promotion Advisor: insights-style assistance, validation agents, and React-based tool calling designed to improve workflow quality, speed, and user trust.",
+        "title": "Promotion Advisor — Agentic Systems & MCP Architecture",
+        "description": "Architecting an enterprise AI agent stack zero-to-production: LLM-driven UI orchestration across 6 core surfaces, Genesis context bridges, MCP Gateway, and host-action tools.",
         "tags": [
-          "GenAI",
+          "Agentic AI",
+          "Model Context Protocol (MCP)",
           "AutoGen",
           "React",
           "TypeScript",
           "Human-in-the-Loop",
-          "Databricks Genie",
-          "LLM Integrations"
+          "Databricks Genie"
         ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal GenAI feature exploration, prototyping, and production delivery. Described at a high level without confidential implementation details.",
+          "context": "Enterprise AI agent architecture and host tooling integration. Described at a high level without confidential implementation details.",
           "whatIOwned": [
-            "AutoGen tool calling integration with React frontend",
-            "Human-in-the-loop UX patterns and guardrails",
-            "AI capabilities for data grid validation and filtering",
-            "Prototyping recipe automation with Databricks Genie"
+            "Architected enterprise AI agent stack from zero to production across 6 application surfaces (~18.4k net LOC)",
+            "Engineered the Genesis context bridge and MCP Gateway for host-action tools",
+            "Implemented frontend tool calling with AutoGen and React with Human-in-the-Loop architecture",
+            "Built server-side Data Access Control (DAC) enrichment APIs ensuring 100% permissioned context ingestion"
           ],
           "technicalHighlights": [
-            "AI-native features with dynamic UI tool calling",
-            "LLM-assisted data grid analysis and validation checks",
-            "UX patterns designed for user trust and feedback loops",
-            "Coordinating firm-wide AI developer tooling pilots"
+            "LLM-driven UI orchestration with secure Model Context Protocol gateway",
+            "Dynamic grid analysis, complex validation workflows, and contextual error filtering",
+            "Server-side DAC filtering protecting user-permissioned state before LLM ingestion",
+            "Intern mentorship automating SQL recipe workflows with Databricks Genie"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — UI SME & Overhauls",
-        "description": "Delivering scalable React + TypeScript interfaces, leading full-page overhauls, and shaping UX patterns for complex, data-heavy Revenue Growth Management workflows.",
+        "title": "Promotion Advisor — Backend Scalability & In-Memory Queues",
+        "description": "Scaling the item cascade engine to process up to 1.2 billion downstream updates with sub-2-second SLAs using parallel in-memory queues and distributed streaming pipelines.",
+        "tags": [
+          ".NET",
+          "Node.js",
+          "TypeScript",
+          "Apache Arrow",
+          "Azure ADLS",
+          "Distributed Systems",
+          "Databricks"
+        ],
+        "status": "internal",
+        "statusLabel": "Internal",
+        "caseStudy": {
+          "context": "High-throughput data engineering and execution decoupling for massive enterprise promotion hierarchies.",
+          "whatIOwned": [
+            "Scaled item cascade engine to handle up to 1.2 billion updates with sub-2s SLAs",
+            "Designed parallel, in-memory queueing architecture in TypeScript/.NET preventing database locking",
+            "Engineered distributed export pipeline streaming 1-million-row Excel reports from Databricks",
+            "Implemented Apache Arrow streams with Azure Data Lake (ADLS) and semaphore concurrency controls"
+          ],
+          "technicalHighlights": [
+            "Sub-2-second SLA processing on massive 1.2B item cascades without lock contention",
+            "Zero-memory-overflow 1M+ row streaming exports via Apache Arrow and ADLS",
+            "Strict semaphore-based concurrency control across distributed workers",
+            "Dynamic Protobuf generation ensuring 100% backward-compatible cloud contracts"
+          ]
+        }
+      },
+      {
+        "title": "Promotion Advisor — UI Performance & Monorepo Modularization",
+        "description": "Specializing as UI SME, slashing repaint costs by 33%, modularizing the frontend into 6 NX workspace packages, and engineering side-by-side comparison overhauls.",
         "tags": [
           "React",
           "TypeScript",
-          "UX/UI Performance",
-          "Tailwind CSS",
-          "Framer Motion",
+          "NX Monorepo",
+          "Rendering Performance",
           "AG Grid",
-          "Figma"
+          "Framer Motion",
+          "Tailwind CSS"
         ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Frontend leadership and core module ownership. Details are sanitized for confidentiality.",
+          "context": "Frontend architecture leadership, rendering performance profiling, and enterprise workspace modularization.",
           "whatIOwned": [
             "UI Subject Matter Expert role for Promotion Advisor 2.0",
-            "Overhaul of Promotion Overview and Scenarios compare UI",
-            "Dynamic client item grouping via dynamic query filters",
-            "Recommendations UI and virtualization performance optimizations"
+            "Reduced bulk-action repaints by 33% and layout thrashing by 50% via rAF throttling",
+            "Modularized monolithic frontend into 6 isolated NX workspace libraries (45 PRs, ~34k LOC)",
+            "Led full-page overhauls of Promotion Overview and Scenarios side-by-side comparison"
           ],
           "technicalHighlights": [
-            "Collapsible sidebars, fluid animations, and responsive compare views",
-            "Grid-based Recommendations UI engineered from scratch",
-            "Dropdown virtualization handling over 10,000 values",
-            "Ad-hoc L3 Support leadership for production stability"
+            "requestAnimationFrame rendering performance optimizations with custom CI benchmarks",
+            "NX monorepo architecture improving build isolation and cross-team development velocity",
+            "Virtualization handling 10,000+ dropdown records with zero frame drops",
+            "Collapsible sidebars, fluid animations, and custom spreadsheet-like copy-paste grid modules"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — Real-Time Broadcasting & Search",
-        "description": "Engineering real-time data broadcasting and responsive workflows using WebSockets and GraphQL subscriptions.",
+        "title": "Promotion Advisor — Real-Time Broadcasting & State Persistence",
+        "description": "Engineering low-latency real-time broadcasting for multi-desk workflows and building custom zero-data-loss filter state persistence layers.",
         "tags": [
           "WebSockets",
           "GraphQL Subscriptions",
+          "State Persistence",
           "Node.js",
           "APIs",
-          "Performance",
-          "Optimization"
+          "Performance"
         ],
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Internal workflows requiring responsive multi-user updates and low-latency broadcasting.",
+          "context": "Multi-user sync and uninterrupted user workflows across complex multi-page analytical suites.",
           "whatIOwned": [
-            "Real-time data broadcasting for the Cross Desk View",
-            "Global Search APIs and multi-user sync patterns"
+            "Real-time data broadcasting for Cross Desk workflows using WebSockets and GraphQL subscriptions",
+            "High-grain reverse index mapping active recipients to eliminate redundant broadcasts",
+            "Custom React persistence layer across 6 core views guaranteeing zero filter-reset data loss",
+            "Global Search APIs and dynamic multi-user coordination patterns"
           ],
           "technicalHighlights": [
-            "WebSockets and GraphQL subscriptions implementation",
-            "High-grain reverse index to eliminate redundant broadcast cycles",
-            "Significant responsiveness improvements and reduced workflow latency"
+            "High-grain reverse index eliminating redundant broadcast cycles and latency",
+            "Zero filter-reset data loss across multi-page user journeys",
+            "Optimized WebSocket and GraphQL subscription pipelines",
+            "Significant boost in cross-desk multi-user responsiveness"
           ]
         }
       },
       {
-        "title": "Promotion Advisor — Observability & CI/CD Pipelines",
-        "description": "Improving production visibility with OpenTelemetry and Dynatrace, and automating configurations via matrix pipelines.",
+        "title": "Promotion Advisor — Production Observability & Release Automation",
+        "description": "Hardening production reliability through OpenTelemetry tracing, Dynatrace dashboards, and multi-client automated matrix CI/CD deployment pipelines.",
         "tags": [
           "OpenTelemetry",
           "Dynatrace",
@@ -260,42 +303,18 @@
         "status": "internal",
         "statusLabel": "Internal",
         "caseStudy": {
-          "context": "Production telemetry improvements and automated release workflows to increase deployment confidence.",
+          "context": "Production telemetry, incident response, and automated release workflows across enterprise clients.",
           "whatIOwned": [
-            "OpenTelemetry SDK integration and Dynatrace migration",
-            "Automating multi-client deployments with GitLab matrix pipelines"
+            "OpenTelemetry (OTEL) SDK integration and Dynatrace dashboard migrations",
+            "Automated GitLab matrix pipelines for multi-client reporting configuration deployments",
+            "Ad-hoc L3 Support Lead diagnosing and resolving high-severity production incidents",
+            "Firm-wide security and compliance analysis for developer AI tooling rollouts"
           ],
           "technicalHighlights": [
-            "Dynatrace dashboard design for real-time operational insights",
-            "GitLab CI/CD automated testing and linting matrix configs",
-            "REST APIs deployment configurations for reporting"
-          ]
-        }
-      },
-      {
-        "title": "Promotion Advisor — Data Visualization & Contracts",
-        "description": "Enhancing reporting UX with Power BI and AG Grid, and implementing cloud-based data contract integrations.",
-        "tags": [
-          "Power BI",
-          "AG Grid",
-          "Protobuf",
-          "Azure ADLS",
-          "Node.js",
-          "PostgreSQL"
-        ],
-        "status": "internal",
-        "statusLabel": "Internal",
-        "caseStudy": {
-          "context": "Internal data reporting and backward-compatible data contracts with downstream systems.",
-          "whatIOwned": [
-            "Power BI and AG Grid data-heavy UI composition",
-            "Dynamic Protobuf generation for cloud storage (ADLS)",
-            "Migrating legacy tactics from SQL to Node.js config frameworks"
-          ],
-          "technicalHighlights": [
-            "Data-heavy grid layout and visualization composition",
-            "Backward-compatible contract generation with cloud delivery",
-            "Transitioning legacy tactic logic systems to Node.js configurations"
+            "Dynatrace and OTEL real-time distributed tracing and observability",
+            "GitLab matrix CI/CD with automated testing, linting, and REST deployment hooks",
+            "Fast incident triage and comprehensive edge case resolution as L3 lead",
+            "Corporate security risk assessment for GitHub Copilot pilot rollout"
           ]
         }
       }
@@ -308,7 +327,7 @@
       "technologies": "Technologies"
     },
     "collaborationCta": {
-      "prefix": "Want to chat about frontend craft, reliability, or GenAI product UX?",
+      "prefix": "Want to chat about frontend craft, reliability, or Agentic AI architecture?",
       "linkText": "Reach out",
       "href": "#contact"
     }
@@ -387,22 +406,22 @@
       {
         "metric": "4",
         "label": "Years Experience",
-        "description": "Frontend-focused full-stack development"
+        "description": "Full-stack enterprise & Agentic AI ownership"
       },
       {
-        "metric": "3",
-        "label": "Internships",
-        "description": "Angular, Streamlit, and full-stack web apps"
-      },
-      {
-        "metric": "E2E",
-        "label": "Ownership",
-        "description": "From architecture to deployment and operations"
+        "metric": "1.2B",
+        "label": "Updates Scaled",
+        "description": "Item cascade processing with sub-2s SLAs"
       },
       {
         "metric": "SME",
         "label": "Frontend SME",
-        "description": "Driving UI quality and scalability"
+        "description": "UI architecture, performance & NX monorepos"
+      },
+      {
+        "metric": "MCP",
+        "label": "Agentic Systems",
+        "description": "Context bridges & Human-in-the-Loop workflows"
       }
     ],
     "timeline": [
@@ -410,24 +429,28 @@
         "period": "Jul 2025 — Present",
         "role": "Software Engineer 2",
         "company": "McKinsey & Company",
-        "impact": "Acted as UI Subject Matter Expert (SME) for Promotion Advisor 2.0; own full-stack development, delivering full-page overhauls, Scenarios compare views, and collapsible sidebars; engineered real-time search APIs and websocket-based broadcasting; implemented AutoGen-driven AI features with human-in-the-loop controls; mentored interns on Databricks Genie SQL recipe automation.",
+        "impact": "Architected enterprise AI agent stack (Genesis context bridge, MCP Gateway, DAC security) across 6 surfaces (~18.4k net LOC); scaled item cascade engine to 1.2B updates with sub-2s SLAs via in-memory queues; built 1M-row streaming export pipeline with Apache Arrow & ADLS; optimized React rendering performance (reduced repaints by 33%, layout thrashing by 50%); modularized frontend into 6 NX workspace libraries (45 PRs, ~34k LOC); engineered real-time broadcasting via WebSockets/GraphQL and 6-page filter persistence.",
         "location": "Bengaluru, India",
         "techStack": [
           "React",
           "TypeScript",
+          "Agentic AI",
+          "MCP",
           "AutoGen",
-          "Databricks Genie",
-          "GenAI",
+          "Node.js",
+          ".NET",
+          "Apache Arrow",
           "GraphQL",
           "WebSockets",
-          "Node.js"
+          "NX",
+          "Azure ADLS"
         ]
       },
       {
         "period": "Jan 2024 — Jul 2025",
         "role": "Software Engineer 1",
         "company": "McKinsey & Company",
-        "impact": "Led frontend development for Dynamic Promo Group query filters; engineered visual margin recommendations engines; built and automated CI/CD GitLab pipelines for multi-client deployment; integrated OpenTelemetry and migrated Dynatrace dashboards; implemented cloud storage data contracts via dynamic Protobuf generation.",
+        "impact": "Led frontend architecture for Dynamic Promo Groups with dynamic ETL filtering; engineered responsive Recommendations UI from scratch for margin optimization; configured automated GitLab matrix REST deployment pipelines; integrated OpenTelemetry SDK tracing and migrated Dynatrace dashboards; delivered dynamic Protobuf generation with Azure Data Lake Storage (ADLS) with 100% backward compatibility.",
         "location": "Bengaluru, India",
         "techStack": [
           "React",
@@ -437,14 +460,15 @@
           "Dynatrace",
           "GitLab CI/CD",
           "Protobuf",
-          "Azure ADLS"
+          "Azure ADLS",
+          "REST APIs"
         ]
       },
       {
         "period": "Aug 2022 — Dec 2023",
         "role": "Junior Software Engineer",
         "company": "McKinsey & Company",
-        "impact": "Optimized complex data tables using virtualization (10k+ entries) and built core copy-paste modules; served as L3 Support Lead for production issue resolution; migrated legacy SQL promotion tactics to Node.js configurations; integrated Power BI and AG Grid reporting interfaces; spearheaded firm-wide adoption of GitHub Copilot.",
+        "impact": "Eliminated UI latency using DOM virtualization for 10,000+ desk selector dropdown records; engineered custom spreadsheet-like copy-paste grid modules; migrated core promotion tactic logic from SQL to Node.js configuration frameworks; integrated Power BI and AG Grid reporting; spearheaded firm-wide adoption and security compliance analysis for GitHub Copilot; served as ad hoc L3 Support Lead.",
         "location": "Bengaluru, India",
         "techStack": [
           "React",
@@ -452,15 +476,16 @@
           "Node.js",
           "AG Grid",
           "Power BI",
+          "SQL",
           "GitHub Copilot",
-          "SQL"
+          "Virtualization"
         ]
       },
       {
         "period": "Feb 2022 — Jun 2022",
         "role": "Junior Software Engineer Intern",
         "company": "McKinsey & Company",
-        "impact": "Built a web application to extract and preview ZIP contents directly in the browser; developed a dynamic UI to view and edit CSV and JSON files with rollback, version control, and diff viewing capabilities.",
+        "impact": "Engineered client-side web application to extract, preview, and edit nested ZIP/CSV/JSON file structures in-browser with diff viewing, version rollback, and lossless file re-packaging.",
         "location": "Bengaluru, India",
         "techStack": [
           "Next.js",
@@ -473,7 +498,7 @@
         "period": "Sep 2020 — Dec 2020",
         "role": "Software Development Intern",
         "company": "Zooked Inc.",
-        "impact": "Built reusable UI components, layouts, and pages in Angular, successfully translating conceptual designs into production UI with clean styling in SCSS.",
+        "impact": "Translated conceptual UX designs into production UI by building reusable Angular components, responsive layouts, and clean SCSS styling.",
         "location": "Remote (Bangalore), India",
         "techStack": [
           "Angular",
@@ -485,7 +510,7 @@
         "period": "Jul 2020 — Aug 2020",
         "role": "Software Development Intern",
         "company": "UST Global",
-        "impact": "Engineered a cutting-edge frontend platform utilizing the Streamlit Framework to facilitate sophisticated and efficient internal API testing.",
+        "impact": "Accelerated internal API validation by engineering a full-stack testing dashboard utilizing Python and the Streamlit framework.",
         "location": "Remote (Trivandrum), India",
         "techStack": [
           "Streamlit",
@@ -587,9 +612,9 @@
     ]
   },
   "seo": {
-    "title": "Shreehari Thakral — UI-First Full-Stack Software Engineer",
-    "description": "UI-first, full-stack software engineer building reliable enterprise systems, high-performance interfaces, and GenAI-assisted workflows.",
-    "ogTitle": "Shreehari Thakral — UI-First Full-Stack Software Engineer",
-    "ogDescription": "Frontend SME specializing in React and TypeScript, with 4 years of experience building enterprise products end-to-end."
+    "title": "Shreehari Thakral — UI-First Full-Stack & AI Engineer",
+    "description": "AI-focused, UI-first Full-Stack Software Engineer specializing in React, TypeScript, Agentic AI, and distributed enterprise platforms.",
+    "ogTitle": "Shreehari Thakral — UI-First Full-Stack & AI Engineer",
+    "ogDescription": "Frontend SME & Full-Stack Engineer at McKinsey specializing in React, TypeScript, Agentic AI (MCP), and high-throughput systems."
   }
 }
